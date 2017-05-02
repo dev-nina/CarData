@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<root>
+<Orders>
+    <Order OrderId="1" WorkName="Установка сигнализаций" BeginTime="23.01.2017" EndTime="27.01.2017" Cost="1000">
+        <Auto AutoId="1" Mark="Lexus" Model ="LX" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="1" FirstName="Дроздов" SecondName="Егор" ThirdName="Петрович" Birth="1988" Phone="89523647895"/>
+    </Order>
+    <Order OrderId="2" WorkName="Ремонт тормозной системы" BeginTime="23.01.2017" EndTime="24.01.2017" Cost="5300">
+        <Auto AutoId="2" Mark="Hyundai" Model ="Solaris" Horsepower="1,6" Year="2012" Transmission="Автоматическая"/>
+        <Client ClientId="1" FirstName="Дроздов" SecondName="Егор" ThirdName="Петрович" Birth="1988" Phone="89523647895"/>
+    </Order>
+    <Order OrderId="3" WorkName="Диагностика и ремонт ходовой" BeginTime="24.01.2017" EndTime="28.01.2017" Cost="1400">
+        <Auto AutoId="3" Mark="ВАЗ" Model ="2112" Horsepower="1,5" Year="2001" Transmission="Автоматическая"/>
+        <Client ClientId="2" FirstName="Сазонов" SecondName="Виталий" ThirdName="Евгеньевич" Birth="1975" Phone="89505789624"/>
+    </Order>
+    <Order OrderId="4" WorkName="Замена сцепления" BeginTime="01.02.2017" EndTime="05.02.2017" Cost="3500">
+        <Auto AutoId="4" Mark="Hyundai" Model ="Elantra" Horsepower="1,6" Year="2009" Transmission="Автоматическая"/>
+        <Client ClientId="3" FirstName="Романова" SecondName="Елена" ThirdName="Леонидовна" Birth="1990" Phone="89514589632"/>
+    </Order> 
+    <Order OrderId="5" WorkName="Чистка дроссельной заслонки" BeginTime="06.02.2017" EndTime="09.02.2017" Cost="4100">
+        <Auto AutoId="4" Mark="Hyundai" Model ="Elantra" Horsepower="1,6" Year="2009" Transmission="Механическая"/>
+        <Client ClientId="3" FirstName="Романова" SecondName="Елена" ThirdName="Леонидовна" Birth="1990" Phone="89514589632"/>
+    </Order>
+    <Order OrderId="6" WorkName="Замена охлаждающей жидкости " BeginTime="09.02.2017" EndTime="10.02.2017" Cost="1000">
+        <Auto AutoId="5" Mark="Volkswagen" Model ="Tiguan" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="4" FirstName="Акимов" SecondName="Ренат" ThirdName="Маратович" Birth="1992" Phone="89558412365"/>
+    </Order>
+    <Order OrderId="7" WorkName="Замена сцепления  " BeginTime="10.02.2017" EndTime="11.02.2017" Cost="5100">
+        <Auto AutoId="6" Mark="KIA" Model ="Rio" Horsepower="1,6" Year="2012" Transmission="Автоматическая"/>
+        <Client ClientId="4" FirstName="Акимов" SecondName="Ренат" ThirdName="Маратович" Birth="1992" Phone="89558412365"/>
+    </Order>
+    <Order OrderId="8" WorkName="Ремонт тормозной системы " BeginTime="12.02.2017" EndTime="13.02.2017" Cost="1400">
+        <Auto AutoId="7" Mark="Lada" Model ="Kalina" Horsepower="1,5" Year="2001" Transmission="Автоматическая"/>
+        <Client ClientId="5" FirstName="Климов" SecondName="Анатолий" ThirdName="Евгеньевич" Birth="1975" Phone="89005278964"/>
+    </Order>
+    <Order OrderId="9" WorkName="Работы по авто-электрике  " BeginTime="12.02.2017" EndTime="14.02.2017" Cost="1500">
+        <Auto AutoId="8" Mark="Lada" Model ="Largus" Horsepower="1,6" Year="2009" Transmission="Механическая"/>
+        <Client ClientId="6" FirstName="Леонова" SecondName="Светлана" ThirdName="Михвйловна" Birth="1995" Phone="89514758965"/>
+    </Order> 
+    <Order OrderId="10" WorkName="Установка сигнализаций " BeginTime="13.02.2017" EndTime="15.02.2017" Cost="1200">
+        <Auto AutoId="9" Mark="Renault" Model ="Logan" Horsepower="1,6" Year="2008" Transmission="Автоматическая"/>
+        <Client ClientId="7" FirstName="Прытов" SecondName="Егор" ThirdName="Кириллович" Birth="1982" Phone="89056584789"/>
+    </Order> 
+    <Order OrderId="11" WorkName="Установка сигнализаций" BeginTime="17.02.2017" EndTime="20.02.2017" Cost="1000">
+        <Auto AutoId="10" Mark="Lada" Model ="Priora" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="8" FirstName="Ханов" SecondName="Николай" ThirdName="Петрович" Birth="1974" Phone="89047589647"/>
+    </Order>
+    <Order OrderId="12" WorkName="Ремонт тормозной системы" BeginTime="23.02.2017" EndTime="24.02.2017" Cost="1300">
+        <Auto AutoId="11" Mark="Ford" Model ="Focus" Horsepower="1,6" Year="2012" Transmission="Механическая"/>
+        <Client ClientId="9" FirstName="Селин" SecondName="Филипп" ThirdName="Егорович" Birth="1978" Phone="89504758247"/>
+    </Order>
+    <Order OrderId="13" WorkName="Диагностика и ремонт ходовой" BeginTime="24.02.2017" EndTime="28.02.2017" Cost="2100">
+        <Auto AutoId="12" Mark="Toyota" Model ="Corolla" Horsepower="1,5" Year="2001" Transmission="Автоматическая"/>
+        <Client ClientId="10" FirstName="Сезин" SecondName="Олег" ThirdName="Иванович" Birth="1985" Phone="89501475896"/>
+    </Order>
+    <Order OrderId="14" WorkName="Замена сцепления" BeginTime="01.03.2017" EndTime="05.03.2017" Cost="3500">
+        <Auto AutoId="13" Mark="Volkswagen" Model ="Golf" Horsepower="1,6" Year="2009" Transmission="Автоматическая"/>
+        <Client ClientId="11" FirstName="Симонова" SecondName="Мария" ThirdName="Леонидовна" Birth="1990" Phone="89514589632"/>
+    </Order> 
+    <Order OrderId="15" WorkName="Чистка дроссельной заслонки" BeginTime="06.03.2017" EndTime="09.03.2017" Cost="5200">
+        <Auto AutoId="14" Mark="Land Rover" Model ="Discovery" Horsepower="1,6" Year="2008" Transmission="Механическая"/>
+        <Client ClientId="2" FirstName="Сазонов" SecondName="Виталий" ThirdName="Евгеньевич" Birth="1975" Phone="89505789624"/>
+    </Order> 
+    <Order OrderId="16" WorkName="Установка сигнализаций" BeginTime="13.03.2017" EndTime="17.03.2017" Cost="2000">
+        <Auto AutoId="15" Mark="Ford" Model ="Kuga" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="12" FirstName="Авилов" SecondName="Константин" ThirdName="Константинович" Birth="1978" Phone="89065214789"/>
+    </Order>
+    <Order OrderId="17" WorkName="Полировка кузова" BeginTime="23.03.2017" EndTime="24.03.2017" Cost="5200">
+        <Auto AutoId="16" Mark="Honda" Model ="CR-V" Horsepower="1,6" Year="2012" Transmission="Механическая"/>
+        <Client ClientId="13" FirstName="Беспалов" SecondName="Аркадий" ThirdName="Викторович" Birth="1974" Phone="89523647895"/>
+    </Order>
+    <Order OrderId="18" WorkName="Снятие и установка двигателя" BeginTime="24.03.2017" EndTime="28.03.2017" Cost="2400">
+        <Auto AutoId="17" Mark="Volkswagen" Model ="Polo" Horsepower="1,5" Year="2001" Transmission="Механическая"/>
+        <Client ClientId="14" FirstName="Леонов" SecondName="Михаил" ThirdName="Петрович" Birth="1995" Phone="89058741596"/>
+    </Order>
+    <Order OrderId="19" WorkName="Замена ролика-натяжителя" BeginTime="01.04.2017" EndTime="05.04.2017" Cost="2500">
+        <Auto AutoId="18" Mark="Toyotar" Model ="Camry" Horsepower="1,6" Year="2009" Transmission="Автоматическая"/>
+        <Client ClientId="15" FirstName="Комарова" SecondName="Ирина" ThirdName="Дмитриевна" Birth="1990" Phone="89065214785"/>
+    </Order> 
+    <Order OrderId="20" WorkName="Чистка дроссельной заслонки" BeginTime="06.04.2017" EndTime="09.04.2017" Cost="1200">
+        <Auto AutoId="19" Mark="Chevrolet" Model ="Silverado" Horsepower="1,6" Year="2008" Transmission="Автоматическая"/>
+        <Client ClientId="16" FirstName="Торопыгин" SecondName="Станислав" ThirdName="Игоревич" Birth="1980" Phone="89051234785"/>
+    </Order> 
+    <Order OrderId="21" WorkName="Установка сигнализаций" BeginTime="13.04.2017" EndTime="17.04.2017" Cost="3000">
+        <Auto AutoId="20" Mark="Hyundai" Model ="Elantra" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="17" FirstName="Назаров" SecondName="Виталий" ThirdName="Иванович" Birth="1976" Phone="89095874697"/>
+    </Order>
+    <Order OrderId="22" WorkName="Ремонт тормозной системы" BeginTime="13.04.2017" EndTime="14.04.2017" Cost="5300">
+        <Auto AutoId="21" Mark="Volkswagen" Model ="Lavida" Horsepower="1,6" Year="2012" Transmission="Механическая"/>
+        <Client ClientId="18" FirstName="Хамонов" SecondName="Леонид" ThirdName="Витальевич" Birth="1988" Phone="89525478259"/>
+    </Order>
+    <Order OrderId="23" WorkName="Диагностика и ремонт ходовой" BeginTime="14.04.2017" EndTime="18.04.2017" Cost="2400">
+        <Auto AutoId="22" Mark="Ram" Model ="Pickup" Horsepower="1,5" Year="2001" Transmission="Механическая"/>
+        <Client ClientId="19" FirstName="Вавилов" SecondName="Виталий" ThirdName="Евгеньевич" Birth="1989" Phone="89065417852"/>
+    </Order>
+    <Order OrderId="24" WorkName="Замена сцепления" BeginTime="15.04.2017" EndTime="17.04.2017" Cost="3500">
+        <Auto AutoId="23" Mark="Ford" Model ="Mondeo" Horsepower="1,6" Year="2009" Transmission="Автоматическая"/>
+        <Client ClientId="20" FirstName="Евсюков" SecondName="Владислав" ThirdName="Аркадьевич" Birth="1971" Phone="89514589632"/>
+    </Order> 
+    <Order OrderId="25" WorkName="Замена натяжителя цепи" BeginTime="16.04.2017" EndTime="19.04.2017" Cost="5200">
+        <Auto AutoId="24" Mark="Honda" Model ="Jazz" Horsepower="1,6" Year="2008" Transmission="Автоматическая"/>
+        <Client ClientId="21" FirstName="Привалов" SecondName="Валентин" ThirdName="Романовчи" Birth="1992" Phone="89558412365"/>
+    </Order> 
+    <Order OrderId="26" WorkName="Замена распредвала" BeginTime="17.04.2017" EndTime="18.04.2017" Cost="1000">
+        <Auto AutoId="25" Mark="Skoda" Model ="Octavia" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="22" FirstName="Самохвалов" SecondName="Борис" ThirdName="Валентинович" Birth="1988" Phone="89068521475"/>
+    </Order>
+    <Order OrderId="27" WorkName="Замена помпы" BeginTime="19.04.2017" EndTime="20.04.2017" Cost="1300">
+        <Auto AutoId="26" Mark="Nissan" Model ="Almera" Horsepower="1,6" Year="2012" Transmission="Механическая"/>
+        <Client ClientId="23" FirstName="Семинихин" SecondName="Андрей" ThirdName="Игоревич" Birth="1978" Phone="89523647895"/>
+    </Order>
+    <Order OrderId="28" WorkName="Промывка двигателя и замена масла" BeginTime="21.04.2017" EndTime="25.04.2017" Cost="2400">
+        <Auto AutoId="15" Mark="Ford" Model ="Kuga" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="12" FirstName="Авилов" SecondName="Константин" ThirdName="Константинович" Birth="1978" Phone="89065214789"/>
+    </Order>
+    <Order OrderId="29" WorkName="Замена опоры двигателя" BeginTime="22.04.2017" EndTime="25.04.2017" Cost="3500">
+        <Auto AutoId="27" Mark="Nissan" Model ="X-Trail" Horsepower="1,6" Year="2009" Transmission="Автоматическая"/>
+        <Client ClientId="24" FirstName="Торохин" SecondName="Петр" ThirdName="Сергеевич" Birth="1986" Phone="890561478596"/>
+    </Order> 
+    <Order OrderId="30" WorkName="Замена термомуфты" BeginTime="23.04.2017" EndTime="25.04.2017" Cost="1200">
+        <Auto AutoId="28" Mark="Mitsubishi" Model ="Outlander" Horsepower="1,6" Year="2008" Transmission="Автоматическая"/>
+        <Client ClientId="25" FirstName="Потапов" SecondName="Евгений" ThirdName="Андреевич" Birth="1992" Phone="89095887412"/>
+    </Order> 
+    <Order OrderId="31" WorkName="Замена салонного фильтра" BeginTime="24.04.2017" EndTime="25.04.2017" Cost="1200">
+        <Auto AutoId="29" Mark="KIA" Model ="Sportage" Horsepower="1,6" Year="2008" Transmission="Механическая"/>
+        <Client ClientId="26" FirstName="Салимов" SecondName="Вениамин" ThirdName="Маратович" Birth="1992" Phone="89065478596"/>
+    </Order> 
+    <Order OrderId="32" WorkName="Замена ремня гидроусилителя" BeginTime="25.04.2017" EndTime="27.04.2017" Cost="4000">
+        <Auto AutoId="30" Mark="Nissan" Model ="Qashqai" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="27" FirstName="Дементьева" SecondName="Марианна" ThirdName="Максимовна" Birth="1988" Phone="89075214896"/>
+    </Order>
+    <Order OrderId="33" WorkName="Замена троса сцепления" BeginTime="26.04.2017" EndTime="28.04.2017" Cost="4300">
+        <Auto AutoId="31" Mark="Hyundai" Model ="ix35" Horsepower="1,6" Year="2012" Transmission="Механическая"/>
+        <Client ClientId="28" FirstName="Саликов" SecondName="Георгий" ThirdName="Петрович" Birth="1978" Phone="89505478695"/>
+    </Order>
+    <Order OrderId="34" WorkName="Замена маятника" BeginTime="26.04.2017" EndTime="28.04.2017" Cost="2400">
+        <Auto AutoId="26" Mark="Nissan" Model ="Almera" Horsepower="1,6" Year="2012" Transmission="Автоматическая"/>
+        <Client ClientId="23" FirstName="Семинихин" SecondName="Андрей" ThirdName="Игоревич" Birth="1978" Phone="89523647895"/>
+    </Order>
+    <Order OrderId="35" WorkName="Замена задних колодок" BeginTime="26.04.2017" EndTime="29.04.2017" Cost="5500">
+        <Auto AutoId="29" Mark="KIA" Model ="Sportage" Horsepower="1,6" Year="2008" Transmission="Автоматическая"/>
+        <Client ClientId="26" FirstName="Салимов" SecondName="Вениамин" ThirdName="Маратович" Birth="1992" Phone="89065478596"/>
+    </Order> 
+    <Order OrderId="36" WorkName="Замена штока ручного тормоза" BeginTime="27.04.2017" EndTime="30.04.2017" Cost="4200">
+        <Auto AutoId="18" Mark="Toyotar" Model ="Camry" Horsepower="1,6" Year="2009" Transmission="Автоматическая"/>
+        <Client ClientId="15" FirstName="Комарова" SecondName="Ирина" ThirdName="Дмитриевна" Birth="1990" Phone="89065214785"/>
+    </Order> 
+    <Order OrderId="37" WorkName="Регулировка троса ручного тормоза" BeginTime="27.04.2017" EndTime="30.04.2017" Cost="4200">
+        <Auto AutoId="21" Mark="Volkswagen" Model ="Lavida" Horsepower="1,6" Year="2012" Transmission="Автоматическая"/>
+        <Client ClientId="18" FirstName="Хамонов" SecondName="Леонид" ThirdName="Витальевич" Birth="1988" Phone="89525478259"/>
+    </Order> 
+    <Order OrderId="38" WorkName="Замена педального узла" BeginTime="37.04.2017" EndTime="01.05.2017" Cost="5000">
+        <Auto AutoId="3" Mark="ВАЗ" Model ="2112" Horsepower="1,5" Year="2001" Transmission="Механическая"/>
+        <Client ClientId="2" FirstName="Сазонов" SecondName="Виталий" ThirdName="Евгеньевич" Birth="1975" Phone="89505789624"/>
+    </Order>
+    <Order OrderId="39" WorkName="Замена стартера" BeginTime="28.04.2017" EndTime="29.04.2017" Cost="5300">
+        <Auto AutoId="31" Mark="Hyundai" Model ="ix35" Horsepower="1,6" Year="2012" Transmission="Механическая"/>
+        <Client ClientId="28" FirstName="Саликов" SecondName="Георгий" ThirdName="Петрович" Birth="1978" Phone="89505478695"/>
+    </Order>
+    <Order OrderId="40" WorkName="Замена замка зажигания" BeginTime="28.04.2017" EndTime="30.04.2017" Cost="4400">
+        <Auto AutoId="20" Mark="Hyundai" Model ="Elantra" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="17" FirstName="Назаров" SecondName="Виталий" ThirdName="Иванович" Birth="1976" Phone="89095874697"/>
+    </Order>
+    <Order OrderId="41" WorkName="Переборка трамблера" BeginTime="29.04.2017" EndTime="30.04.2017" Cost="3500">
+        <Auto AutoId="32" Mark="Toyota" Model ="RAV4" Horsepower="1,6" Year="2009" Transmission="Механическая"/>
+        <Client ClientId="29" FirstName="Сорокина" SecondName="Светлана" ThirdName="Алексеевна" Birth="1977" Phone="89035478596"/>
+    </Order> 
+    <Order OrderId="42" WorkName="Замена лампочки" BeginTime="29.04.2017" EndTime="01.05.2017" Cost="4200">
+        <Auto AutoId="33" Mark="Chevrolet" Model ="Niva" Horsepower="1,6" Year="2008" Transmission="Автоматическая"/>
+        <Client ClientId="30" FirstName="Воронов" SecondName="Роман" ThirdName="Андреевич" Birth="1982" Phone="89061254879"/>
+    </Order> 
+   <Order OrderId="43" WorkName="Установка магнитофона" BeginTime="30.04.2017" EndTime="02.05.2017" Cost="4300">
+        <Auto AutoId="34" Mark="Hyundai" Model ="Solaris" Horsepower="1,6" Year="2012" Transmission="Автоматическая"/>
+        <Client ClientId="31" FirstName="Жигалин" SecondName="Олег" ThirdName="Александрович" Birth="1968" Phone="89047458961"/>
+    </Order>
+    <Order OrderId="44" WorkName="Замена рычага переключения стеклоочистителя" BeginTime="30.04.2017" EndTime="01.05.2017" Cost="2400">
+        <Auto AutoId="31" Mark="Hyundai" Model ="ix35" Horsepower="1,6" Year="2012" Transmission="Механическая"/>
+        <Client ClientId="28" FirstName="Саликов" SecondName="Георгий" ThirdName="Петрович" Birth="1978" Phone="89505478695"/>
+    </Order>
+    <Order OrderId="45" WorkName="Замена печки" BeginTime="30.04.2017" EndTime="01.05.2017" Cost="4800">
+        <Auto AutoId="9" Mark="Renault" Model ="Logan" Horsepower="1,6" Year="2008" Transmission="Автоматическая"/>
+        <Client ClientId="7" FirstName="Прытов" SecondName="Егор" ThirdName="Кириллович" Birth="1982" Phone="89056584789"/>
+    </Order> 
+    <Order OrderId="46" WorkName="Замена термостата" BeginTime="01.05.2017" Cost="2200">
+       <Auto AutoId="28" Mark="Mitsubishi" Model ="Outlander" Horsepower="1,6" Year="2008" Transmission="Автоматическая"/>
+        <Client ClientId="25" FirstName="Потапов" SecondName="Евгений" ThirdName="Андреевич" Birth="1992" Phone="89095887412"/>
+    </Order> 
+    <Order OrderId="47" WorkName="Замена стабилизатора" BeginTime="01.05.2017" Cost="4200">
+        <Auto AutoId="25" Mark="Skoda" Model ="Octavia" Horsepower="5,7" Year="2017" Transmission="Автоматическая"/>
+        <Client ClientId="22" FirstName="Самохвалов" SecondName="Борис" ThirdName="Валентинович" Birth="1988" Phone="89068521475"/>
+    </Order> 
+    <Order OrderId="48" WorkName="Замена подшипника" BeginTime="02.05.2017" Cost="4000">
+        <Auto AutoId="21" Mark="Volkswagen" Model ="Lavida" Horsepower="1,6" Year="2012" Transmission="Автоматическая"/>
+        <Client ClientId="18" FirstName="Хамонов" SecondName="Леонид" ThirdName="Витальевич" Birth="1988" Phone="89525478259"/>
+    </Order>
+    <Order OrderId="49" WorkName="Замена воздушного фильтра" BeginTime="02.05.2017" Cost="5300">
+        <Auto AutoId="13" Mark="Volkswagen" Model ="Golf" Horsepower="1,6" Year="2009" Transmission="Механическая"/>
+        <Client ClientId="11" FirstName="Симонова" SecondName="Мария" ThirdName="Леонидовна" Birth="1990" Phone="89514589632"/>
+    </Order>
+    <Order OrderId="50" WorkName="Замена тормозной жидкости" BeginTime="03.05.2017" Cost="4400">
+         <Auto AutoId="18" Mark="Toyotar" Model ="Camry" Horsepower="1,6" Year="2009" Transmission="Автоматическая"/>
+        <Client ClientId="15" FirstName="Комарова" SecondName="Ирина" ThirdName="Дмитриевна" Birth="1990" Phone="89065214785"/>
+    </Order>
+    <Order OrderId="51" WorkName="Замена двери с переборкой" BeginTime="03.05.2017" Cost="1000">
+         <Auto AutoId="16" Mark="Honda" Model ="CR-V" Horsepower="1,6" Year="2012" Transmission="Автоматическая"/>
+        <Client ClientId="13" FirstName="Беспалов" SecondName="Аркадий" ThirdName="Викторович" Birth="1974" Phone="89523647895"/>
+    </Order> 
+    <Order OrderId="52" WorkName="Вскрытие двери" BeginTime="03.05.2017" Cost="4200">
+        <Auto AutoId="9" Mark="Renault" Model ="Logan" Horsepower="1,6" Year="2008" Transmission="Механическая"/>
+        <Client ClientId="7" FirstName="Прытов" SecondName="Егор" ThirdName="Кириллович" Birth="1982" Phone="89056584789"/>
+    </Order> 
+</Orders> 
+</root>
+
