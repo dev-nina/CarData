@@ -99,26 +99,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="car.cs" />
-    <Compile Include="client.cs" />
-    <Compile Include="DBModel.cs" />
     <Compile Include="Interface\IBinaryRepository.cs" />
     <Compile Include="Interface\IDBRepository.cs" />
     <Compile Include="Interface\IXMLRepository.cs" />
-    <Compile Include="Models\BinaryReading.cs" />
-    <Compile Include="Models\DBReading.cs" />
-    <Compile Include="Models\XMLReading.cs" />
-    <Compile Include="order.cs" />
+    <Compile Include="DataAccess\BinaryReading.cs" />
+    <Compile Include="DataAccess\DBReading.cs" />
+    <Compile Include="DataAccess\XMLReading.cs" />
+    <Compile Include="Models\Car.cs">
+      <DependentUpon>CarServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CarServiceModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarServiceModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CarServiceModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CarServiceModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarServiceModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CarServiceViewModel.cs" />
+    <Compile Include="Models\Client.cs">
+      <DependentUpon>CarServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order.cs">
+      <DependentUpon>CarServiceModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Models\CarServiceModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CarServiceModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataFile\AutoServiceData.dat" />
+    <None Include="Models\CarServiceModel.edmx.diagram">
+      <DependentUpon>CarServiceModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="DataFile\AutoServiceData.xml" />
+    <Content Include="DataFile\DbCreateSchema.txt" />
+    <Content Include="Models\CarServiceModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CarServiceModel.edmx</DependentUpon>
+      <LastGenOutput>CarServiceModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CarServiceModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CarServiceModel.edmx</DependentUpon>
+      <LastGenOutput>CarServiceModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

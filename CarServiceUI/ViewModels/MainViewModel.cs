@@ -14,14 +14,15 @@ using System.Collections;
 using System.Windows;
 using CarServiceData;
 using System.Data;
+using CarServiceData.Models;
 
 namespace CarServiceUI.ViewModels
 {
-    class OrderViewModel
+    class MainViewModel: INotifyPropertyChanged
     {
         StandardKernel kernel = new StandardKernel(new CommonModule());
 
-        public IEnumerable Data;
+        public ObservableCollection<CarServiceViewModel> Data { get; set; }
 
         private LoadingType selectedType;
         public ObservableCollection<LoadingType> LoadingTypes { get; set; }
@@ -33,8 +34,8 @@ namespace CarServiceUI.ViewModels
                 selectedType = value;
             }
         }
-
-        public OrderViewModel()
+        
+        public MainViewModel()
         {
             LoadingTypes = new ObservableCollection<LoadingType>
             {
@@ -42,32 +43,46 @@ namespace CarServiceUI.ViewModels
                 new LoadingType {Name = "XML file"},
                 new LoadingType {Name = "Binary file"}
             };
+            Data = new ObservableCollection<CarServiceViewModel>();
         }        
 
         private RelayCommand loading;
         public RelayCommand Loading
         {
-
             get
             {
                 return loading ??
               (loading = new RelayCommand(obj =>
               {
+                  List<CarServiceViewModel> values = new List<CarServiceViewModel>();
                   switch (SelectedType.Name)
                   {
                       case "MySQL Data Base":
-                          this.Data = kernel.Get<IDBRepository>().GetList();
+                          values = kernel.Get<IDBRepository>().GetList();
                           break;
                       case "XML file":
-                          this.Data = kernel.Get<IXMLRepository>().GetList();
+                          values = kernel.Get<IXMLRepository>().GetList();
                           break;
                       case "Binary file":
-                          this.Data = kernel.Get<IBinaryRepository>().GetList();
+                          values = kernel.Get<IBinaryRepository>().GetList();
                           break;
                   }
+                  Data.Clear();
+                  foreach(CarServiceViewModel value in values)
+                  {
+                      Data.Add(value);
+                  }
+               
               }));
 
             }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged([CallerMemberName]string prop = "")
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(prop));
         }
     }
 }

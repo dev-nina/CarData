@@ -23,8 +23,7 @@ namespace CarServiceUI
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new OrderViewModel();
-            OrderGrid.ItemsSource = ((OrderViewModel) DataContext).Data;
+            DataContext = new MainViewModel();
             
         }
     }

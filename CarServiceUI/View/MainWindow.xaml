@@ -5,23 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarServiceUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800">
+        Title="Агрегатор данных от автосервисов" MinHeight="500" MinWidth="900">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="700*"></ColumnDefinition>
+            <ColumnDefinition Width="200*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-        <ComboBox Grid.Row="0" Margin="20,20,20,10" ItemsSource="{Binding LoadingTypes}" SelectedItem="{Binding SelectedType}" Name="methodList" Height="30" VerticalAlignment="Top">
+
+        <ComboBox Grid.Column="0" Grid.Row="0" Margin="20,20,10,0" ItemsSource="{Binding LoadingTypes}" SelectedItem="{Binding SelectedType}" Name="methodList" Height="30" VerticalAlignment="Top">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Path=Name}"/>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <Button Margin="20,5,20,5" Grid.Row="1" Command="{Binding Loading}" CommandParameter="{Binding Data}" CommandTarget="{Binding ElementName=OrderGrid}">Загрузить данные</Button>
-        <DataGrid Grid.Row="2" Margin="20,10,20,20" ItemsSource="{Binding Data}"  DataContext="{Binding Data}"  Name="OrderGrid" EnableRowVirtualization="True" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray" RowBackground="LightGray" AlternatingRowBackground="White">
+        <Button Margin="10,20,12,0" Grid.Column="1" Grid.Row="0" Command="{Binding Loading}">Загрузить данные</Button>
+        <DataGrid Grid.Row="1" Margin="20,10,12, 20" MinWidth="900" ItemsSource="{Binding Data}" Name="OrderGrid" EnableRowVirtualization="True" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray" RowBackground="LightGray" AlternatingRowBackground="White" Grid.ColumnSpan="3">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="*" Header="ID заказа" Binding="{Binding Path=Id}"/>
                 <DataGridTextColumn Width="*" Header="Марка авто" Binding="{Binding Path=Mark}"/>

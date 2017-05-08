@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище CarServiceModel" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="IdCar" />
+    </Key>
+    <Property Name="IdCar" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mark" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Model" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Transmission" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Horsepower" Type="float" Nullable="false" />
+    <Property Name="ClientId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="IdClient" />
+    </Key>
+    <Property Name="IdClient" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="SecondName" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="ThirdName" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Birth" Type="int" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="IdOrder" />
+    </Key>
+    <Property Name="IdOrder" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="BeginTime" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Precision="0" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="CarId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="car_ibfk_1">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="IdClient" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="order_ibfk_1">
+    <End Role="Car" Type="Self.Car" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="IdCar" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище CarServiceModelContainer">
+    <EntitySet Name="Car" EntityType="Self.Car" Schema="carservice" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="carservice" store:Type="Tables" />
+    <EntitySet Name="Order" EntityType="Self.Order" Schema="carservice" store:Type="Tables" />
+    <AssociationSet Name="car_ibfk_1" Association="Self.car_ibfk_1">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="order_ibfk_1" Association="Self.order_ibfk_1">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

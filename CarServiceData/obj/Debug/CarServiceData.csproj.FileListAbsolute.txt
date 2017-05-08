@@ -1,4 +1,3 @@
-C:\Users\Нина\Documents\Visual Studio 2015\Projects\CarServiceUI\CarServiceData\obj\Debug\CarServiceData.csprojResolveAssemblyReference.cache
 C:\Users\Нина\Documents\Visual Studio 2015\Projects\CarServiceUI\CarServiceData\bin\Debug\CarServiceData.dll.config
 C:\Users\Нина\Documents\Visual Studio 2015\Projects\CarServiceUI\CarServiceData\bin\Debug\CarServiceData.dll
 C:\Users\Нина\Documents\Visual Studio 2015\Projects\CarServiceUI\CarServiceData\bin\Debug\CarServiceData.pdb
@@ -32,3 +31,4 @@ C:\Users\Нина\Documents\Visual Studio 2015\Projects\CarServiceUI\CarServiceD
 C:\Users\Нина\Documents\Visual Studio 2015\Projects\CarServiceUI\CarServiceData\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
 C:\Users\Нина\Documents\Visual Studio 2015\Projects\CarServiceUI\CarServiceData\obj\Debug\CarServiceData.dll
 C:\Users\Нина\Documents\Visual Studio 2015\Projects\CarServiceUI\CarServiceData\obj\Debug\CarServiceData.pdb
+C:\Users\Нина\Documents\Visual Studio 2015\Projects\CarServiceUI\CarServiceData\obj\Debug\CarServiceData.csprojResolveAssemblyReference.cache
