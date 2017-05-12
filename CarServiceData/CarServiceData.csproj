@@ -152,7 +152,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="DataFile\AutoServiceData.xml" />
-    <Content Include="DataFile\DbCreateSchema.txt" />
+    <Content Include="DataFile\DbCreateSchema.sql" />
     <Content Include="Models\CarServiceModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CarServiceModel.edmx</DependentUpon>
